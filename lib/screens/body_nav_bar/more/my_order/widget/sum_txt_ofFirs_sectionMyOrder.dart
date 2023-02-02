@@ -14,7 +14,7 @@ class SumTxtOfFirsSectionMyOrder extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const SizedBox(height: 5),
-        const Text('King Burgers',style: TextStyle(fontSize: midemTesx,fontWeight: FontWeight.bold),),
+        const Text('King Burgers',style: TextStyle(fontSize: mediumTxt,fontWeight: FontWeight.bold),),
         const SizedBox(height: 5),
         Row(children: const[
           Icon(Icons.star,color: Color(primaryColor),size: 18,),

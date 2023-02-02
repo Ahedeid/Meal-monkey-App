@@ -125,7 +125,7 @@ class LoginHederTxt extends StatelessWidget {
     return const Text(
       'Login',
       style: TextStyle(
-        fontSize: psizeText,
+        fontSize: largeTxt,
         fontWeight: FontWeight.bold,
         color: Color(primaryTextColor),
       ),

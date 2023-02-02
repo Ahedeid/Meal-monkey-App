@@ -51,7 +51,7 @@ class CustomCardPayment extends StatelessWidget {
                 title: const Text(
                   '**** **** ****',
                   style: TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: midemTesx),
+                      fontWeight: FontWeight.bold, fontSize: mediumTxt),
                 ),
                 trailing: IconButton(
                     onPressed: () {},

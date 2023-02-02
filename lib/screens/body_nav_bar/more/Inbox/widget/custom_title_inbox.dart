@@ -16,7 +16,7 @@ class CustomTitleIndox extends StatelessWidget {
           Text(
             'MealMonkey Promotions',
             style: TextStyle(
-              fontSize: midemTesx,
+              fontSize: mediumTxt,
             ),
           ),
           SizedBox(height: 5),

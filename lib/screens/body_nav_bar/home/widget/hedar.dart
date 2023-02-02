@@ -24,7 +24,7 @@ class HedarName extends StatelessWidget {
            Text(
             title ,
             style: TextStyle(
-              fontSize: psizeText,
+              fontSize: largeTxt,
               color: Color(primaryTextColor),
               fontWeight: FontWeight.bold,
             ),

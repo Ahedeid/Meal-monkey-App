@@ -22,7 +22,7 @@ class CustomListComp extends StatelessWidget {
         title: Text(
           'Current Location',
           style: TextStyle(
-            fontSize: psizeText,
+            fontSize: largeTxt,
             color: Color(primaryTextColor),
             fontWeight: FontWeight.bold
           ),

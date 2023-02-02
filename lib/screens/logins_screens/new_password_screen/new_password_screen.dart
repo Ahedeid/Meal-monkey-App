@@ -24,7 +24,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
               Text(
                 'New Password',
                 style: TextStyle(
-                  fontSize: psizeText,
+                  fontSize: largeTxt,
                   fontWeight: FontWeight.bold,
                   color: Color(primaryTextColor),
                 ),

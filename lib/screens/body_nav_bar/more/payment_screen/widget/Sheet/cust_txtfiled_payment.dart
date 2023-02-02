@@ -18,7 +18,7 @@ class Cust_txtfiled_payment extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 5),
       child: SizedBox(
-        height: textFeildHeight,
+        height: textFieldHeight,
         width: wSizeFelid,
         child: TextField(
           decoration: InputDecoration(

@@ -29,7 +29,7 @@ class SendOrderSheet extends StatelessWidget {
             const Text(
               'Thank You!',
               style: TextStyle(
-                  fontSize: psizeText,
+                  fontSize: largeTxt,
                   color: Color(primaryTextColor),
                   fontWeight: FontWeight.bold),
             ),
@@ -54,7 +54,7 @@ class SendOrderSheet extends StatelessWidget {
               title: 'Track My Order',
               mycolor: Color(primaryColor),
               routeName: '',
-              textSize: midemTesx,
+              textSize: mediumTxt,
             ),
             TextButton(
                 onPressed: () {
@@ -64,7 +64,7 @@ class SendOrderSheet extends StatelessWidget {
                   'Back To Home',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: midemTesx,
+                      fontSize: mediumTxt,
                       color: Color(primaryTextColor)),
                 ))
           ],

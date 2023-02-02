@@ -21,7 +21,7 @@ class PageViewHederTxt extends StatelessWidget {
         child: Text(
           _data[_index].title,
           style: const TextStyle(
-              fontSize: psizeText,
+              fontSize: largeTxt,
               fontWeight: FontWeight.bold,
               color: Color(primaryTextColor)),
         ));

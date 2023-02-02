@@ -12,7 +12,7 @@ class ResetHedertxt extends StatelessWidget {
     return const Text(
       'Reset Password',
       style: TextStyle(
-        fontSize: psizeText,
+        fontSize: largeTxt,
         fontWeight: FontWeight.bold,
         color: Color(primaryTextColor),
       ),

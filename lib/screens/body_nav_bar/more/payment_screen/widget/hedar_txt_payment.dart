@@ -16,7 +16,7 @@ class HedarTxtPayment extends StatelessWidget {
       child: Text(
         'Customize your payment method',
         style:
-        TextStyle(fontWeight: FontWeight.bold, fontSize: midemTesx),
+        TextStyle(fontWeight: FontWeight.bold, fontSize: mediumTxt),
       ),
     );
   }

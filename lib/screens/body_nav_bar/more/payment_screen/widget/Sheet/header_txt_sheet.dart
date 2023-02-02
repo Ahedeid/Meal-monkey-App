@@ -17,7 +17,7 @@ class HeaderTxtSheetPayMent extends StatelessWidget {
       'Add Credit/Debit Card',
       style: TextStyle(
           fontWeight: FontWeight.bold,
-          fontSize: midemTesx),
+          fontSize: mediumTxt),
     );
   }
 }

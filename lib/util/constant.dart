@@ -10,8 +10,8 @@
 
 // Size Text in App
    const double sizeText = 16 ;
-   const double midemTesx = 18 ;
-   const double psizeText = 30 ;
+   const double mediumTxt = 18 ;
+   const double largeTxt = 30 ;
 
 
 // Width && Height  Button in App
@@ -19,6 +19,6 @@
    const double buttonHeight =56;
 
 
-// Width && Height TextFeild in App
-   const double textFeildWidth = 340;
-   const double textFeildHeight =60;
+// Width && Height TextField in App
+   const double textFieldWidth = 340;
+   const double textFieldHeight =60;

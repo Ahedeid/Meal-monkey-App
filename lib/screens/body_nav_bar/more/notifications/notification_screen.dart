@@ -19,7 +19,7 @@ class NotificationScreen extends StatelessWidget {
           title: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
-            Text('Your orders has been picked up',style: TextStyle(fontSize: midemTesx,),),
+            Text('Your orders has been picked up',style: TextStyle(fontSize: mediumTxt,),),
             SizedBox(height: 5),
             Text('Now',style: TextStyle(color: Color(secondaryTextColor)),),
           ]),

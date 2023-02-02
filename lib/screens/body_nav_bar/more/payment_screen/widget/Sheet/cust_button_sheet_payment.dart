@@ -40,7 +40,7 @@ class CustButtonSheetPayMent extends StatelessWidget {
               SizedBox(width: 33),
               Text(
                 'Add Card',
-                style: TextStyle(fontSize: midemTesx),
+                style: TextStyle(fontSize: mediumTxt),
               ),
             ],
           ),),

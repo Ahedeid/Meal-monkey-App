@@ -24,7 +24,7 @@ class _ConformScreenState extends State<ConformScreen> {
               '''We have sent an OTP to 
            your Mobile  ''',
               style: TextStyle(
-                fontSize: psizeText,
+                fontSize: largeTxt,
                 fontWeight: FontWeight.bold,
                 color: Color(primaryTextColor),
               ),

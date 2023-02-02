@@ -42,7 +42,7 @@ class _CusBottomSheetPayMentState extends State<CusBottomSheetPayMent> {
               children: const [
                 Text(
                   'Expiry',
-                  style: TextStyle(fontSize: midemTesx),
+                  style: TextStyle(fontSize: mediumTxt),
                 ),
                 Cust_txtfiled_payment(
                     hint: 'MM', wSizeFelid: 100),

@@ -17,7 +17,7 @@ class ChangeAddress extends StatelessWidget {
           const Text(
             '''653 Nostrand Ave., 
 Brooklyn, NY 11216''',
-            style: TextStyle(fontSize: midemTesx, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: mediumTxt, fontWeight: FontWeight.bold),
           ),
           TextButton(
             onPressed: () {
@@ -27,7 +27,7 @@ Brooklyn, NY 11216''',
               'Change',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: midemTesx,
+                fontSize: mediumTxt,
                 color: Color(primaryColor),
               ),
             ),

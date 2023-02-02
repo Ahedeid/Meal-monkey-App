@@ -42,7 +42,7 @@ class CustomListHorisTwo extends StatelessWidget {
                       style: TextStyle(
                         color: Color(primaryTextColor),
                         fontWeight: FontWeight.bold,
-                        fontSize: midemTesx,
+                        fontSize: mediumTxt,
                       ),
                     ),
                     const SizedBox(height: 5),

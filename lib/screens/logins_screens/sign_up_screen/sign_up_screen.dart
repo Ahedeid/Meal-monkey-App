@@ -25,7 +25,7 @@ class _SignUpState extends State<SignUp> {
               const Text(
                 'Sign Up',
                 style: TextStyle(
-                  fontSize: psizeText,
+                  fontSize: largeTxt,
                   fontWeight: FontWeight.bold,
                   color: Color(primaryTextColor),
                 ),
