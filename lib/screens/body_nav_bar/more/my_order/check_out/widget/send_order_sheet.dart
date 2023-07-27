@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:meal_monkey_mobile_project/screens/body_nav_bar/more/payment_screen/widget/Sheet/icon_closebottom_sheet_pay_mayment.dart';
+import 'package:meal_monkey_mobile_project/shared/my_button.dart';
+import 'package:meal_monkey_mobile_project/util/const_assets.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
-import '../../../../../../shared/my_button.dart';
-import '../../../../../../util/const_assets.dart';
-import '../../../../../../util/constant.dart';
-import '../../../payment_screen/widget/Sheet/icon_closebottom_sheet_pay_mayment.dart';
 
 
 class SendOrderSheet extends StatelessWidget {
@@ -50,10 +50,10 @@ class SendOrderSheet extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 30),
-            const MyButtons(
+             CustomButton(
               title: 'Track My Order',
-              mycolor: Color(primaryColor),
-              routeName: '',
+              color: const Color(primaryColor),
+              onPressed: (){},
               textSize: mediumTxt,
             ),
             TextButton(

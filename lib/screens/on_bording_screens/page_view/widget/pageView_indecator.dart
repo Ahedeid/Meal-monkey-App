@@ -16,15 +16,15 @@ class PageViewIndecator extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        OnBoardingIndicatort(
+        OnBoardingIndicator(
           marginEnd: 5,
           selected: _index == 0,
         ),
-        OnBoardingIndicatort(
+        OnBoardingIndicator(
           marginEnd: 5,
           selected: _index == 1,
         ),
-        OnBoardingIndicatort(
+        OnBoardingIndicator(
           selected: _index == 2,
         ),
       ],

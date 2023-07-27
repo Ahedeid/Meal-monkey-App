@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import '../../../util/constant.dart';
 
 
-class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
+class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
    CustomAppBar({
     required this.index
   });

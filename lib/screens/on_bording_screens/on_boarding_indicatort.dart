@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-
-
-class OnBoardingIndicatort extends StatelessWidget {
-
+class OnBoardingIndicator extends StatelessWidget {
   final double marginEnd;
   final bool selected;
 
-
-  const OnBoardingIndicatort({super.key, required this.selected, this.marginEnd = 0});
+  const OnBoardingIndicator({
+    super.key,
+    required this.selected,
+    this.marginEnd = 0,
+  });
 
   @override
   Widget build(BuildContext context) {

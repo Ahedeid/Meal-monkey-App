@@ -84,10 +84,10 @@ class MyOederScreen extends StatelessWidget {
                 colors: const Color(primaryColor),
                 size: 22),
             const SizedBox(height: 30),
-            const MyButtons(
+             CustomButton(
               title: 'Checkout',
-              mycolor: Color(primaryColor),
-              routeName: 'check_out_screen',
+              color: Color(primaryColor),
+              onPressed: ()=>Navigator.pushNamed(context, 'check_out_screen'),
               textSize: sizeText,
             )
           ],

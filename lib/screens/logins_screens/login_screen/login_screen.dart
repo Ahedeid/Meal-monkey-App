@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../shared/custom_textfeild.dart';
-import '../../../shared/my_button.dart';
-import '../../../util/constant.dart';
-
+import 'package:meal_monkey_mobile_project/shared/custom_textfeild.dart';
+import 'package:meal_monkey_mobile_project/shared/my_button.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
+import 'package:meal_monkey_mobile_project/util/validate_extension.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -23,35 +23,46 @@ class _LoginScreenState extends State<LoginScreen> {
             children: [
               const SizedBox(height: 85),
               const LoginHederTxt(),
-              const SizedBox(height: 12,),
-               LoginSecandTxt(txt: 'Add your details to login',),
+              const SizedBox(height: 12),
+              const LoginSecandTxt(
+                txt: 'Add your details to login',
+              ),
               const SizedBox(height: 40),
-              const custom_textfield(hint: 'Your Email'),
+              CustomTextFiled(
+                hintText: 'Your Email',
+                keyboardType: TextInputType.emailAddress,
+                validator: (val) => val!.validateEmail(),
+              ),
               const SizedBox(height: 28),
-              const custom_textfield(hint: 'Password'),
+              CustomTextFiled(
+                hintText: 'Password',
+                keyboardType: TextInputType.visiblePassword,
+                obscureText: true,
+                validator: (val) => val!.validatePassword(),
+              ),
               const SizedBox(height: 28),
-              const MyButtons(
+               CustomButton(
                   title: 'Login',
-                  mycolor: Color(primaryColor),
-                  routeName: 'home_screen',
+                  color: const Color(primaryColor),
+                  onPressed: ()=>Navigator.pushNamed(context, 'home_screen'),
                   textSize: sizeText),
               const SizedBox(height: 15),
               const LoginForgotTxt(),
               const SizedBox(height: 40),
-             LoginSecandTxt(txt: 'or Login With'),
+              const LoginSecandTxt(txt: 'or Login With'),
               const SizedBox(height: 27),
-              const MyButtons(
+               CustomButton(
                   title: 'Login with Facebook',
-                  mycolor: Color(0xff367FC0),
-                  routeName: 'home_screen',
+                  color:const Color(0xff367FC0),
+                  onPressed: ()=>Navigator.pushNamed(context, 'home_screen'),
                   textSize: sizeText),
               const SizedBox(height: 20),
-              const MyButtons(
+               CustomButton(
                   title: 'Login with Google',
-                  mycolor: Color(0xffDD4B39),
-                  routeName: 'home_screen',
+                  color: const Color(0xffDD4B39),
+                  onPressed: ()=>Navigator.pushNamed(context, 'home_screen'),
                   textSize: sizeText),
-              const SizedBox(height:55),
+              const SizedBox(height: 55),
               const LoginDontAccount()
             ],
           ),
@@ -70,12 +81,21 @@ class LoginDontAccount extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
-    children: [
-      const Text('Don\'t have an Account?',style: TextStyle(color: Color(secondaryTextColor),fontSize: sizeText),),
-      TextButton(onPressed: (){
-        Navigator.pushNamed(context, 'sign_up_screen');
-      }, child: const Text('Sign Up',style: TextStyle(color: Color(primaryColor),fontSize: sizeText),))
-    ],
+      children: [
+        const Text(
+          'Don\'t have an Account?',
+          style:
+              TextStyle(color: Color(secondaryTextColor), fontSize: sizeText),
+        ),
+        TextButton(
+            onPressed: () {
+              Navigator.pushNamed(context, 'sign_up_screen');
+            },
+            child: const Text(
+              'Sign Up',
+              style: TextStyle(color: Color(primaryColor), fontSize: sizeText),
+            ))
+      ],
     );
   }
 }
@@ -93,24 +113,23 @@ class LoginForgotTxt extends StatelessWidget {
         },
         child: const Text(
           'Forgot Your Password?',
-          style: TextStyle(
-            color: Color(secondaryTextColor),fontSize: sizeText
-          ),
+          style:
+              TextStyle(color: Color(secondaryTextColor), fontSize: sizeText),
         ));
   }
 }
 
 class LoginSecandTxt extends StatelessWidget {
-  String txt ;
-   LoginSecandTxt({
-    required this.txt
-  });
+  final String txt;
+
+  const LoginSecandTxt({super.key, required this.txt});
 
   @override
   Widget build(BuildContext context) {
-    return  Text(
+    return Text(
       txt,
-      style: const TextStyle(color: Color(secondaryTextColor),fontSize: sizeText),
+      style:
+          const TextStyle(color: Color(secondaryTextColor), fontSize: sizeText),
     );
   }
 }
@@ -132,5 +151,3 @@ class LoginHederTxt extends StatelessWidget {
     );
   }
 }
-
-

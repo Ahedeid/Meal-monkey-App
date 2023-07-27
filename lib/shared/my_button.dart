@@ -1,43 +1,54 @@
 import 'package:flutter/material.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
-import '../util/constant.dart';
+class CustomButton extends StatelessWidget {
+  final String title;
 
+  final Color color;
 
+  final double textSize;
 
-class MyButtons extends StatelessWidget {
+  final void Function()? onPressed;
 
-  final String title ;
-  final Color mycolor ;
-  final String routeName ;
-  final double textSize ;
-
-  const MyButtons({super.key,
-    required this.title ,required this.mycolor ,required this.routeName,required this.textSize
-  });
+  const CustomButton(
+      {super.key,
+      required this.onPressed,
+      required this.title,
+      required this.color,
+      required this.textSize});
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {
-       title=='Checkout'? Navigator.pushNamed(context, routeName)
-           : Navigator.pushReplacementNamed(context, routeName);
-
-      },
-      style: title == 'Create an Account'?
-      ButtonStyle(
-          minimumSize: MaterialStateProperty.all(const Size(buttonWidth, buttonHeight)),
-          backgroundColor: MaterialStateProperty.all(const Color(backGroundColor)),
-          shape: MaterialStateProperty.all(
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(28),side:const BorderSide(color: Color(primaryColor),width: 2))))
-
+      onPressed: onPressed,
+      style: title == 'Create an Account'
+          ? ButtonStyle(
+              minimumSize: MaterialStateProperty.all(
+                  const Size(buttonWidth, buttonHeight)),
+              backgroundColor:
+                  MaterialStateProperty.all(const Color(backGroundColor)),
+              shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(28),
+                  side:
+                      const BorderSide(color: Color(primaryColor), width: 2))))
           : ButtonStyle(
-        minimumSize: MaterialStateProperty.all( const Size(buttonWidth, buttonHeight)),
-        backgroundColor: MaterialStateProperty.all(mycolor),
-        shape: MaterialStateProperty.all(
-          RoundedRectangleBorder(borderRadius: BorderRadius.circular(28),),
-        ),
+              minimumSize: MaterialStateProperty.all(
+                  const Size(buttonWidth, buttonHeight)),
+              backgroundColor: MaterialStateProperty.all(color),
+              shape: MaterialStateProperty.all(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(28),
+                ),
+              ),
+            ),
+      child: Text(
+        title,
+        style: TextStyle(
+            fontSize: textSize,
+            color: title == 'Create an Account'
+                ? const Color(primaryColor)
+                : const Color(textInButtonColor)),
       ),
-      child:  Text(title,style: TextStyle(fontSize: textSize,color:  title == 'Create an Account'? const Color(primaryColor): Color(textInButtonColor)),),
     );
   }
 }

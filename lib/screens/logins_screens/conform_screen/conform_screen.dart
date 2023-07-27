@@ -19,7 +19,7 @@ class _ConformScreenState extends State<ConformScreen> {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 34,vertical: 90),
           child: Column(
-              children: const [
+              children:  [
             Text(
               '''We have sent an OTP to 
            your Mobile  ''',
@@ -38,10 +38,10 @@ class _ConformScreenState extends State<ConformScreen> {
             SizedBox(height: 54),
             ConformFields(),
             SizedBox(height: 40),
-            MyButtons(
+            CustomButton(
                 title: 'Next',
-                mycolor: Color(primaryColor),
-                routeName: 'new_password_screen',
+                color: Color(primaryColor),
+                onPressed: ()=>Navigator.pushNamed(context, 'new_password_screen'),
                 textSize: sizeText),
             SizedBox(height: 32),
             ConformClickHere()

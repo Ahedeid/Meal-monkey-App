@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import '../util/constant.dart';
 
 
-class CsutAppBarOther extends StatelessWidget with PreferredSizeWidget {
+class CsutAppBarOther extends StatelessWidget implements PreferredSizeWidget {
   String txt ;
    CsutAppBarOther({super.key,
     required this.txt

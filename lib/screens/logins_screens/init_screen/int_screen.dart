@@ -16,35 +16,35 @@ class _IntScreenState extends State<IntScreen> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-          children: const [
-            InitScreenStacks(),
-            SizedBox(height: 40),
-            Padding(
+          children:  [
+            const InitScreenStacks(),
+            const   SizedBox(height: 40),
+            const  Padding(
                 padding: EdgeInsets.symmetric(horizontal: 40),
                 child: Text(
                   '''    Discover the best foods from over 1,000 
 restaurants and fast delivery to your doorstep''',
                   style: TextStyle(fontSize: sizeText),
                 )),
-            SizedBox(height: 36),
+            const   SizedBox(height: 36),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 34),
-              child: MyButtons(
+              padding: const EdgeInsets.symmetric(horizontal: 34),
+              child: CustomButton(
                 title: 'Login',
-                mycolor: Color(primaryColor),
-                routeName: 'login_screen',
+                color:const Color(primaryColor),
+                onPressed: ()=>Navigator.pushNamed(context, 'login_screen'),
                 textSize: sizeText,
               ),
             ),
-            SizedBox(
-              height: 20,
+            const  SizedBox(
+              height: 20
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 34),
-              child: MyButtons(
+              padding: const EdgeInsets.symmetric(horizontal: 34),
+              child: CustomButton(
                 title: 'Create an Account',
-                mycolor: Color(primaryColor),
-                routeName: 'sign_up_screen',
+                color:const Color(primaryColor),
+                onPressed: ()=>Navigator.pushNamed(context, 'sign_up_screen'),
                 textSize: sizeText,
               ),
             ),

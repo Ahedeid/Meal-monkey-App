@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:meal_monkey_mobile_project/localData/shared_pref.dart';
+import 'package:meal_monkey_mobile_project/models/p_models.dart';
 import 'package:meal_monkey_mobile_project/screens/on_bording_screens/page_view/widget/pageView_button.dart';
 import 'package:meal_monkey_mobile_project/screens/on_bording_screens/page_view/widget/pageView_heder_txt.dart';
 import 'package:meal_monkey_mobile_project/screens/on_bording_screens/page_view/widget/pageView_indecator.dart';
 import 'package:meal_monkey_mobile_project/screens/on_bording_screens/page_view/widget/pageView_secand_txt.dart';
-import '../../../models/p_models.dart';
-
-
-
 
 class MPageView extends StatefulWidget {
   const MPageView({Key? key}) : super(key: key);
@@ -26,6 +24,7 @@ class _MPageViewState extends State<MPageView> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    SharedPrefController().setShowOnce(true);
     _controller = PageController();
     _controller.addListener(() {
       setState(() {
@@ -47,13 +46,15 @@ class _MPageViewState extends State<MPageView> {
       body: Column(
         children: [
           Expanded(
+            flex: 3,
             child: PageView.builder(
                 controller: _controller,
                 itemCount: _data.length,
                 itemBuilder: (context, index) {
                   return Column(
                     children: [
-                       SizedBox(height: MediaQuery.of(context).size.height * 0.15),
+                      SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.15),
                       SvgPicture.asset(
                         _data[index].imagePath!,
                       ),
@@ -63,24 +64,16 @@ class _MPageViewState extends State<MPageView> {
           ),
           PageViewIndecator(index: _index),
           const SizedBox(height: 38),
-          PageViewHederTxt(data: _data, index: _index),
+          PageViewHeaderTxt(data: _data, index: _index),
           PageViewSecandTxt(data: _data, index: _index),
           const SizedBox(height: 40),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 34),
             child: PageViewButton(index: _index, controller: _controller),
           ),
-          const SizedBox(height: 94),
+          const Expanded(child: SizedBox(height: 1)),
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-

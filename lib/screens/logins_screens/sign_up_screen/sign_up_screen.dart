@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../../shared/custom_textfeild.dart';
-import '../../../shared/my_button.dart';
-import '../../../util/constant.dart';
-
+import 'package:meal_monkey_mobile_project/shared/custom_textfeild.dart';
+import 'package:meal_monkey_mobile_project/shared/my_button.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 
 class SignUp extends StatefulWidget {
@@ -33,25 +32,44 @@ class _SignUpState extends State<SignUp> {
               const SizedBox(height: 10),
               const Text(
                 'Add your details to sign up',
-                style: TextStyle(color: Color(secondaryTextColor),fontSize: sizeText),
+                style: TextStyle(
+                    color: Color(secondaryTextColor), fontSize: sizeText),
               ),
               const SizedBox(height: 37),
-              const custom_textfield(hint: 'Name'),
+              const CustomTextFiled(
+                hintText: 'Name',
+                keyboardType: TextInputType.text,
+              ),
               const SizedBox(height: 28),
-              const custom_textfield(hint: 'Email'),
+              const CustomTextFiled(
+                hintText: 'Email',
+                keyboardType: TextInputType.emailAddress,
+              ),
               const SizedBox(height: 28),
-              const custom_textfield(hint: 'Mobile No'),
+              const CustomTextFiled(
+                hintText: 'Mobile No',
+                keyboardType: TextInputType.phone,
+              ),
               const SizedBox(height: 28),
-              const custom_textfield(hint: 'Address'),
+              const CustomTextFiled(
+                hintText: 'Address',
+                keyboardType: TextInputType.text,
+              ),
               const SizedBox(height: 28),
-              const custom_textfield(hint: 'Password'),
+              const CustomTextFiled(
+                hintText: 'Password',
+                keyboardType: TextInputType.emailAddress,
+              ),
               const SizedBox(height: 28),
-              const custom_textfield(hint: 'Confirm Password'),
+              const CustomTextFiled(
+                hintText: 'Confirm Password',
+                keyboardType: TextInputType.emailAddress,
+              ),
               const SizedBox(height: 28),
-              const MyButtons(
+               CustomButton(
                   title: 'Sign Up',
-                  mycolor: Color(primaryColor),
-                  routeName: 'login_screen',
+                  color: const Color(primaryColor),
+                  onPressed: ()=>Navigator.pushNamed(context, 'login_screen'),
                   textSize: sizeText),
               const SizedBox(height: 15),
               Row(
@@ -59,7 +77,8 @@ class _SignUpState extends State<SignUp> {
                 children: [
                   const Text(
                     'Already have an Account?',
-                    style: TextStyle(color: Color(secondaryTextColor),fontSize: sizeText),
+                    style: TextStyle(
+                        color: Color(secondaryTextColor), fontSize: sizeText),
                   ),
                   TextButton(
                       onPressed: () {
@@ -67,7 +86,8 @@ class _SignUpState extends State<SignUp> {
                       },
                       child: const Text(
                         'Login',
-                        style: TextStyle(color: Color(primaryColor),fontSize: sizeText),
+                        style: TextStyle(
+                            color: Color(primaryColor), fontSize: sizeText),
                       ))
                 ],
               )

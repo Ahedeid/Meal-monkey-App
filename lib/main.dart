@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meal_monkey_mobile_project/localData/shared_pref.dart';
 import 'package:meal_monkey_mobile_project/screens/body_nav_bar/more/Inbox/inbox_screen.dart';
 import 'package:meal_monkey_mobile_project/screens/body_nav_bar/more/about_us/about_us_screen.dart';
 import 'package:meal_monkey_mobile_project/screens/body_nav_bar/more/my_order/check_out/change_address/widget/change_address.dart';
@@ -18,9 +19,11 @@ import 'package:meal_monkey_mobile_project/screens/logins_screens/reset_password
 import 'package:meal_monkey_mobile_project/screens/logins_screens/sign_up_screen/sign_up_screen.dart';
 import 'package:meal_monkey_mobile_project/screens/on_bording_screens/page_view/page_view.dart';
 
-
-
-void main ()=> runApp(const MonkeyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SharedPrefController().init();
+  runApp(const MonkeyApp());
+}
 
 class MonkeyApp extends StatelessWidget {
   const MonkeyApp({Key? key}) : super(key: key);
@@ -30,26 +33,25 @@ class MonkeyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: 'launch_screen',
-      // onGenerateRoute: ,
       routes: {
-        'launch_screen':(context)=>const LaunchScreen(),
-        'int_screen':(context)=>const IntScreen(),
-        'page_view':(context)=>const MPageView(),
-        'login_screen':(context)=>const LoginScreen(),
-        'sign_up_screen':(context)=>const SignUp(),
-        'reset_password_screen':(context)=>const ResetPassword(),
-        'conform_screen':(context)=>const ConformScreen(),
-        'new_password_screen':(context)=>const NewPasswordScreen(),
-        'home_screen':(context)=>const HomeScreen(),
-        'desserts_screen':(context)=>const DessertsScreen(),
-        'det_screen':(context)=>const DetScreen(),
-        'payment_screen':(context)=>const PaymentScreen(),
-        'Notification_screen':(context)=>const NotificationScreen(),
-        'aboutUsScreen_screen':(context)=>const AboutUsScreen(),
-        'inboxScreen_screen':(context)=>const InboxScreen(),
-        'myoeder_screen':(context)=>const MyOederScreen(),
-        'check_out_screen':(context)=> const CheckOutScreen(),
-        'change_address_screen':(context)=> const ChangeAddressScreen(),
+        'launch_screen': (context) => const LaunchScreen(),
+        'int_screen': (context) => const IntScreen(),
+        'page_view': (context) => const MPageView(),
+        'login_screen': (context) => const LoginScreen(),
+        'sign_up_screen': (context) => const SignUp(),
+        'reset_password_screen': (context) => const ResetPassword(),
+        'conform_screen': (context) => const ConformScreen(),
+        'new_password_screen': (context) => const NewPasswordScreen(),
+        'home_screen': (context) => const HomeScreen(),
+        'desserts_screen': (context) => const DessertsScreen(),
+        'det_screen': (context) => const DetScreen(),
+        'payment_screen': (context) => const PaymentScreen(),
+        'Notification_screen': (context) => const NotificationScreen(),
+        'aboutUsScreen_screen': (context) => const AboutUsScreen(),
+        'inboxScreen_screen': (context) => const InboxScreen(),
+        'myoeder_screen': (context) => const MyOederScreen(),
+        'check_out_screen': (context) => const CheckOutScreen(),
+        'change_address_screen': (context) => const ChangeAddressScreen(),
       },
     );
   }

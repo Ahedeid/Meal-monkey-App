@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 
 class BottomNavModel {
-
   final IconData? icon;
 
   final String? label;
 
-  
-
-  BottomNavModel(
-      { this.icon,  this.label,});
+  BottomNavModel({
+    this.icon,
+    this.label,
+  });
 
   static List<BottomNavModel> list = [
     BottomNavModel(

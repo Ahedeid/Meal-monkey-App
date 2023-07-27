@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:meal_monkey_mobile_project/screens/body_nav_bar/profile/widget/col_txt.dart';
-
-
-import '../../../shared/custom_textfeild.dart';
-import '../../../shared/my_button.dart';
-import '../../../util/constant.dart';
+import 'package:meal_monkey_mobile_project/shared/custom_textfeild.dart';
+import 'package:meal_monkey_mobile_project/shared/my_button.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class ProfileNav extends StatefulWidget {
   const ProfileNav({Key? key}) : super(key: key);
@@ -16,13 +14,15 @@ class ProfileNav extends StatefulWidget {
 class _ProfileNavState extends State<ProfileNav> {
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return  SingleChildScrollView(
       child: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 34,),
+          padding: EdgeInsets.symmetric(
+            horizontal: 34,
+          ),
           child: SingleChildScrollView(
             child: Column(
-              children:  const [
+              children: [
                 CircleAvatar(
                   maxRadius: 45,
                   backgroundImage: AssetImage('assets/images/user.png'),
@@ -30,22 +30,50 @@ class _ProfileNavState extends State<ProfileNav> {
                 SizedBox(height: 8),
                 ColTxt(),
                 SizedBox(height: 8),
-                Text('Hi there Emilia!',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                Text(
+                  'Hi there Emilia!',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
                 SizedBox(height: 2),
-                Text('Sign Out',style: TextStyle(color: Color(secondaryTextColor)),),
+                Text(
+                  'Sign Out',
+                  style: TextStyle(color: Color(secondaryTextColor)),
+                ),
                 SizedBox(height: 20),
-                custom_textfield(hint: 'Name'),
+                CustomTextFiled(
+                  hintText: 'Name',
+                  keyboardType: TextInputType.text,
+                ),
                 SizedBox(height: 12),
-                custom_textfield(hint: 'Email'),
+                CustomTextFiled(
+                  hintText: 'Email',
+                  keyboardType: TextInputType.emailAddress,
+                ),
                 SizedBox(height: 12),
-                custom_textfield(hint: 'Mobile No'),
+                CustomTextFiled(
+                  hintText: 'Mobile No',
+                  keyboardType: TextInputType.phone,
+                ),
                 SizedBox(height: 12),
-                custom_textfield(hint: 'Password'),
+                CustomTextFiled(
+                  hintText: 'Password',
+                  keyboardType: TextInputType.text,
+                  obscureText: true,
+                ),
                 SizedBox(height: 12),
-                custom_textfield(hint: 'Confirm Password'),
+                CustomTextFiled(
+                  hintText: 'Confirm Password',
+                  keyboardType: TextInputType.text,
+                  obscureText: true,
+                ),
                 SizedBox(height: 12),
-                MyButtons(title: 'Save', mycolor: Color(primaryColor), routeName: '', textSize: sizeText,),
-              SizedBox(height: 50)
+                CustomButton(
+                  title: 'Save',
+                  color: Color(primaryColor),
+                  onPressed: (){},
+                  textSize: sizeText,
+                ),
+                SizedBox(height: 50)
               ],
             ),
           ),
@@ -54,5 +82,3 @@ class _ProfileNavState extends State<ProfileNav> {
     );
   }
 }
-
-

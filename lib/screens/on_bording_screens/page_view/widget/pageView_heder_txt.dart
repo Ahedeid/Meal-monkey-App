@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:meal_monkey_mobile_project/models/p_models.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
-import '../../../../models/p_models.dart';
-import '../../../../util/constant.dart';
-
-
-class PageViewHederTxt extends StatelessWidget {
-  const PageViewHederTxt({
+class PageViewHeaderTxt extends StatelessWidget {
+  const PageViewHeaderTxt({
     Key? key,
     required List<PageModel> data,
     required int index,
-  }) : _data = data, _index = index, super(key: key);
+  })  : _data = data,
+        _index = index,
+        super(key: key);
 
   final List<PageModel> _data;
   final int _index;
