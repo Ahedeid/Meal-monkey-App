@@ -1,25 +1,29 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
-import '../../../util/constant.dart';
-
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-   CustomAppBar({
-    required this.index
-  });
-   int index ;
-final tex =['Menu','Latest Offers','Good morning Akila!','Profile','More',];
+  CustomAppBar({super.key, required this.index});
+
+  final int index;
+
+  final tex = [
+    'Menu',
+    'Latest Offers',
+    'Good morning Akila!',
+    'Profile',
+    'More',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal:10 ,vertical:10),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       child: AppBar(
         systemOverlayStyle: const SystemUiOverlayStyle(
-          statusBarColor: Colors.transparent, // <-- SEE HERE
-          statusBarIconBrightness: Brightness.dark, //<-- For Android SEE HERE (dark icons)
-          statusBarBrightness: Brightness.light, //<-- For iOS SEE HERE (dark icons)
+          statusBarColor: Colors.transparent,
+          statusBarIconBrightness: Brightness.dark,
+          statusBarBrightness: Brightness.light,
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -43,11 +47,8 @@ final tex =['Menu','Latest Offers','Good morning Akila!','Profile','More',];
     );
   }
 
-
   @override
   // TODO: implement preferredSize
   @override
-
   Size get preferredSize => const Size.fromHeight(60);
-
 }
