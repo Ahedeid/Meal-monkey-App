@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:meal_monkey_mobile_project/util/constant.dart';
 
-
 class HeaderName extends StatelessWidget {
   final String title;
 
- const HeaderName({
+  const HeaderName({
     super.key,
     required this.title,
   });

@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
-
 class ImagesInListOfHome extends StatelessWidget {
-   ImagesInListOfHome({
-    Key? key,required this.index,required this.images
+  const ImagesInListOfHome({
+    Key? key,
+    required this.index,
+    required this.images,
   }) : super(key: key);
- int index ;
- List images ;
+  final int index;
+
+  final List images;
 
   @override
   Widget build(BuildContext context) {

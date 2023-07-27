@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meal_monkey_mobile_project/util/constant.dart';
 
-
 class CustomListComp extends StatelessWidget {
   const CustomListComp({
     Key? key,

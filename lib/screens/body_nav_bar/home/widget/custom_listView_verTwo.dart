@@ -13,7 +13,7 @@ class CustomListViewVerTwo extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 22),
       child: Expanded(
           child: ListView.builder(
-            shrinkWrap: true,
+              shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
               itemCount: 3,
               itemBuilder: (context, index) {

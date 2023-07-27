@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
-import '../../../../../util/constant.dart';
-
-class MianTxtInListHome extends StatelessWidget {
-  const MianTxtInListHome({
+class MainTxtInListHome extends StatelessWidget {
+  const MainTxtInListHome({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.only(left: 22,top: 15),
+      padding: EdgeInsets.only(left: 22, top: 15),
       child: Text(
         'Minute by tuk tuk',
         style: TextStyle(

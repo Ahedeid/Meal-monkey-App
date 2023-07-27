@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:meal_monkey_mobile_project/util/const_assets.dart';
 
-import '../../../../util/const_assets.dart';
 import 'Content_Recent_Item_inhome.dart';
 
 class ListRecentItemsHome extends StatelessWidget {
@@ -20,11 +20,9 @@ class ListRecentItemsHome extends StatelessWidget {
             Image.asset(pizza2),
             const SizedBox(width: 17),
             const ContentRecentItemInHome(),
-
           ],
         ),
       ),
     );
   }
 }
-

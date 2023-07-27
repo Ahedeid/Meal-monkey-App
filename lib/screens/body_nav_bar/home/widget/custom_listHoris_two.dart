@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../../../../util/const_assets.dart';
-import '../../../../util/constant.dart';
-
+import 'package:meal_monkey_mobile_project/util/const_assets.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class CustomListHorisTwo extends StatelessWidget {
   const CustomListHorisTwo({
@@ -46,23 +44,25 @@ class CustomListHorisTwo extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 5),
-                    Row(
-                      children: const [
+                    const Row(
+                      children: [
                         Text(
                           'Café Western Food',
                           style: TextStyle(
                             color: Color(secondaryTextColor),
-
                           ),
                         ),
                         SizedBox(width: 5),
-                        Icon(Icons.star,color: Color(primaryColor),size: 18,),
+                        Icon(
+                          Icons.star,
+                          color: Color(primaryColor),
+                          size: 18,
+                        ),
                         SizedBox(width: 5),
                         Text(
                           '4.9',
                           style: TextStyle(
                             color: Color(primaryColor),
-
                           ),
                         ),
                       ],

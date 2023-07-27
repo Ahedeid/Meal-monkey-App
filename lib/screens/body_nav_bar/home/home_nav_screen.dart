@@ -22,7 +22,7 @@ class HomeNavScreen extends StatelessWidget {
         const SizedBox(height: 15),
         const SearchBarWidget(),
         const SizedBox(height: 18),
-        CustomListHoris(),
+        CustomListHorisntal(),
         const SizedBox(height: 28),
         const HeaderName(title: 'Popular Restaurants'),
         const SizedBox(height: 25),

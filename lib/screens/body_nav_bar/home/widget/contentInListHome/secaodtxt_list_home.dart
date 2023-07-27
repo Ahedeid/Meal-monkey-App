@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../util/constant.dart';
-
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class SecaondTxtInListHome extends StatelessWidget {
   const SecaondTxtInListHome({
@@ -10,8 +8,8 @@ class SecaondTxtInListHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: const [
+    return const Row(
+      children: [
         SizedBox(width: 22),
         Icon(
           Icons.star_outlined,
@@ -19,7 +17,13 @@ class SecaondTxtInListHome extends StatelessWidget {
           size: 25,
         ),
         SizedBox(width: 5),
-        Text('562',style: TextStyle(fontSize: sizeText,color: Color(secondaryTextColor)),),
+        Text(
+          '562',
+          style: TextStyle(
+            fontSize: sizeText,
+            color: Color(secondaryTextColor),
+          ),
+        ),
         SizedBox(width: 5),
         Text(
           '(124 ratings) Café Western Food',
@@ -28,7 +32,6 @@ class SecaondTxtInListHome extends StatelessWidget {
             fontSize: sizeText,
           ),
         ),
-
       ],
     );
   }

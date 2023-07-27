@@ -31,7 +31,7 @@ class BodyOffer extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children:  [
               ImagesInListOfHome(index: index, images: images,),
-              const MianTxtInListHome(),
+              const MainTxtInListHome(),
               const SizedBox(height: 10),
               const SecaondTxtInListHome(),
               const SizedBox(height: 15),

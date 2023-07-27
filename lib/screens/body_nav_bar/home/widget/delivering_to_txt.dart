@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
-import '../../../../util/constant.dart';
 
 class DeliveringToTxt extends StatelessWidget {
   const DeliveringToTxt({
