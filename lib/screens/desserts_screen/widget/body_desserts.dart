@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
-
-import '../../../util/constant.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class BodyDesserts extends StatelessWidget {
-  const  BodyDesserts({
+  const BodyDesserts({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: (){
+      onTap: () {
         Navigator.pushNamed(context, 'det_screen');
       },
       child: Padding(
@@ -19,8 +18,11 @@ class BodyDesserts extends StatelessWidget {
           children: [
             SizedBox(
               width: double.infinity,
-              child: Image.asset('assets/images/food.png',color: Colors.black.withOpacity(0.2),
-                colorBlendMode: BlendMode.darken,),
+              child: Image.asset(
+                'assets/images/food.png',
+                color: Colors.black.withOpacity(0.2),
+                colorBlendMode: BlendMode.darken,
+              ),
             ),
             const Positioned(
               bottom: 50,
@@ -34,10 +36,10 @@ class BodyDesserts extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 10),
-            Positioned(
+            const Positioned(
               bottom: 20,
               child: Row(
-                children: const [
+                children: [
                   SizedBox(width: 22),
                   Icon(
                     Icons.star_outlined,

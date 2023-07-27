@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../util/constant.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class PasswordFeild extends StatelessWidget {
   const PasswordFeild({
@@ -20,7 +19,7 @@ class PasswordFeild extends StatelessWidget {
         style: const TextStyle(color: Colors.black, fontSize: 35),
         decoration: InputDecoration(
             contentPadding:
-            const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(13),
                 borderSide: BorderSide.none)),

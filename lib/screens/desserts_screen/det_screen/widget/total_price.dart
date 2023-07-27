@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../util/constant.dart';
-
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class TotalPrice extends StatelessWidget {
   const TotalPrice({
@@ -10,12 +8,8 @@ class TotalPrice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children:  const [
-        OrangeContainer(),
-        CustCard(),
-        CusButton()
-      ],
+    return const Stack(
+      children: [OrangeContainer(), CustCard(), CusButton()],
     );
   }
 }
@@ -28,31 +22,25 @@ class CusButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-    top: 65,
-    right: 43,
-    child: Container(
-      width: 47,
-      height: 47,
-      decoration:  const BoxDecoration(
-          boxShadow: [
-        BoxShadow(
-            color: Colors.black12,
-            offset: Offset(1.5, 1.5)),
-        BoxShadow(
-            color: Colors.black12,
-            offset: Offset(-1.5, -1.5)),
-      ],
-          shape: BoxShape.circle, color: Colors.white),
-      child: IconButton(
-        onPressed: () {},
-        icon: const Icon(
-          Icons.shopping_cart,
-          color: Color(primaryColor),
-          size: 25,
+      top: 65,
+      right: 43,
+      child: Container(
+        width: 47,
+        height: 47,
+        decoration: const BoxDecoration(boxShadow: [
+          BoxShadow(color: Colors.black12, offset: Offset(1.5, 1.5)),
+          BoxShadow(color: Colors.black12, offset: Offset(-1.5, -1.5)),
+        ], shape: BoxShape.circle, color: Colors.white),
+        child: IconButton(
+          onPressed: () {},
+          icon: const Icon(
+            Icons.shopping_cart,
+            color: Color(primaryColor),
+            size: 25,
+          ),
         ),
       ),
-    ),
-      );
+    );
   }
 }
 
@@ -63,15 +51,14 @@ class CustCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(
-          horizontal: 40, vertical: 18),
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 40, vertical: 18),
       child: SizedBox(
         width: 330,
         height: 140,
         child: Card(
           elevation: 8,
-          shape: const RoundedRectangleBorder(
+          shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
               topRight: Radius.circular(10),
               bottomRight: Radius.circular(10),
@@ -82,10 +69,10 @@ class CustCard extends StatelessWidget {
           child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
-              children:  const [
+              children: [
                 Text(
                   'Total Price',
-                  style: TextStyle(fontSize: 16,color: Color(0xff4A4B4D)),
+                  style: TextStyle(fontSize: 16, color: Color(0xff4A4B4D)),
                 ),
                 SizedBox(height: 4),
                 Text(
@@ -116,10 +103,9 @@ class CustomButtonCard extends StatelessWidget {
       width: 165,
       height: 38,
       child: ElevatedButton(
-        onPressed:(){},
+        onPressed: () {},
         style: const ButtonStyle(
-            backgroundColor: MaterialStatePropertyAll(
-                Color(primaryColor)),
+            backgroundColor: MaterialStatePropertyAll(Color(primaryColor)),
             shape: MaterialStatePropertyAll(
               RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(
@@ -127,8 +113,8 @@ class CustomButtonCard extends StatelessWidget {
                 ),
               ),
             )),
-        child: Row(
-          children: const [
+        child: const Row(
+          children: [
             Icon(Icons.add_shopping_cart_outlined),
             SizedBox(width: 12),
             Text('Add to Cart'),

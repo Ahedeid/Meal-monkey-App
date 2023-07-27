@@ -16,7 +16,7 @@ class _MenuNavState extends State<MenuNav> {
     return const Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        //SizedBox(height: 5),
+        SizedBox(height: 5),
         SearchBarWidget(),
         SizedBox(height: 35),
         BodyMenu(),

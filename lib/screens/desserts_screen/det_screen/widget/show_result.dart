@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
-
-import '../../../../util/constant.dart';
-
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class ShowResultDet extends StatelessWidget {
-   ShowResultDet({
-    required this.count
-  });
-int count ;
+  const ShowResultDet({super.key, required this.count});
+
+  final int count;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,12 +13,16 @@ int count ;
       height: 35,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
-          border:Border.all(
-              color: const Color(primaryColor),
-              width: 2
-          )
+          border: Border.all(
+            color: const Color(primaryColor),
+            width: 2,
+          )),
+      child: Center(
+        child: Text(
+          '$count',
+          style: const TextStyle(fontSize: 16),
+        ),
       ),
-      child:  Center(child: Text('$count',style: const TextStyle(fontSize: 16),),),
     );
   }
 }

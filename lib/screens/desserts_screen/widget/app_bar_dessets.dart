@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
-import '../../../util/constant.dart';
 
 class CustomAppBarDesserts extends StatelessWidget implements PreferredSizeWidget{
   const CustomAppBarDesserts({
@@ -45,6 +45,7 @@ class CustomAppBarDesserts extends StatelessWidget implements PreferredSizeWidge
 
 
   // TODO: implement preferredSize
+  @override
   Size get preferredSize => const Size.fromHeight(80);
 
 }

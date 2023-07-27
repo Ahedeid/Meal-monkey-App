@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../../util/constant.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class DeliveryAddressTxt extends StatelessWidget {
   const DeliveryAddressTxt({

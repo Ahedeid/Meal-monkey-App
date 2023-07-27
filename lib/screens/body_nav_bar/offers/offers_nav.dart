@@ -19,7 +19,7 @@ class _OffersNavState extends State<OffersNav> {
       shrinkWrap: true,
       children:  [
         const HeadOfferSc(),
-        const CustButtonOffer(),
+        const CustomButtonOffer(),
         BodyOffer()
       ],
     );

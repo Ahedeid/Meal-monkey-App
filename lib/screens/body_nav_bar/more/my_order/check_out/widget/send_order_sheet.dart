@@ -5,8 +5,6 @@ import 'package:meal_monkey_mobile_project/shared/my_button.dart';
 import 'package:meal_monkey_mobile_project/util/const_assets.dart';
 import 'package:meal_monkey_mobile_project/util/constant.dart';
 
-
-
 class SendOrderSheet extends StatelessWidget {
   const SendOrderSheet({
     Key? key,
@@ -19,10 +17,9 @@ class SendOrderSheet extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 23),
         child: Column(
-
           children: [
             const SizedBox(height: 8),
-            const IconCloseBottomSeetPayMayment(),
+            const IconCloseBottomSheetPayment(),
             const SizedBox(height: 15),
             SvgPicture.asset(moneyAndPayment),
             const SizedBox(height: 40),
@@ -50,10 +47,10 @@ class SendOrderSheet extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 30),
-             CustomButton(
+            CustomButton(
               title: 'Track My Order',
               color: const Color(primaryColor),
-              onPressed: (){},
+              onPressed: () {},
               textSize: mediumTxt,
             ),
             TextButton(

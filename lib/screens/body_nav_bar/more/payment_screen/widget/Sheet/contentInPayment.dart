@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../../util/constant.dart';
-
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class ContentInButtonPayment extends StatelessWidget {
   const ContentInButtonPayment({
@@ -19,13 +17,15 @@ class ContentInButtonPayment extends StatelessWidget {
         str == 'Send Order'
             ? const Text('')
             : const Icon(
-          Icons.add,
-          size: 28,
-        ),
+                Icons.add,
+                size: 28,
+              ),
         const SizedBox(width: 25),
         Text(
           str,
-          style: const TextStyle(fontSize: sizeText),
+          style: const TextStyle(
+            fontSize: sizeText,
+          ),
         ),
       ],
     );

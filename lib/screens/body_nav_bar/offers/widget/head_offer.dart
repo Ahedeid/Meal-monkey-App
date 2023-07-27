@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../util/constant.dart';
-
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class HeadOfferSc extends StatelessWidget {
   const HeadOfferSc({
@@ -11,7 +9,7 @@ class HeadOfferSc extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20,vertical: 5),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
       child: Text(
         '''Find discounts, Offers special
 meals and more!''',

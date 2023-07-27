@@ -1,9 +1,10 @@
-
 import 'package:flutter/material.dart';
 
 class CustomButtonMore extends StatelessWidget {
-  String nav;
-   CustomButtonMore({super.key,
+  final String nav;
+
+  const CustomButtonMore({
+    super.key,
     required this.nav,
   });
 
@@ -23,7 +24,7 @@ class CustomButtonMore extends StatelessWidget {
           onPressed: () {
             Navigator.pushNamed(context, nav);
           },
-          icon:  const Icon(
+          icon: const Icon(
             Icons.arrow_forward_ios,
             size: 20,
           ),

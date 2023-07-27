@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class CustomTextFiled extends StatelessWidget {
   const CustomTextFiled({
     required this.hintText,
@@ -60,42 +59,35 @@ class CustomTextFiled extends StatelessWidget {
       autovalidateMode: AutovalidateMode.disabled,
       obscureText: obscureText,
       decoration: InputDecoration(
-        suffixIcon: suffixIcon,
-        suffix: suffix,
-        prefixIcon: prefixIcon,
-        hintText: hintText,
-        // errorStyle: const TextStyle(fontSize: 12, height: 0.9),
-        hintStyle:  const TextStyle(
-          color: Colors.grey,
-          fontSize: 14,
-        ),
-        filled: true,
-        fillColor: backGroundColor,
+          suffixIcon: suffixIcon,
+          suffix: suffix,
+          prefixIcon: prefixIcon,
+          hintText: hintText,
+          // errorStyle: const TextStyle(fontSize: 12, height: 0.9),
+          hintStyle: const TextStyle(
+            color: Colors.grey,
+            fontSize: 14,
+          ),
+          filled: true,
+          fillColor: backGroundColor,
           contentPadding:
-          const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-    border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(25),
-          borderSide: BorderSide.none,
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(25),
-          borderSide: BorderSide.none,
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(25),
-          borderSide: const BorderSide(color: Colors.orangeAccent),
-        )
-      ),
+              const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(25),
+            borderSide: BorderSide.none,
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(25),
+            borderSide: BorderSide.none,
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(25),
+            borderSide: const BorderSide(color: Colors.orangeAccent),
+          )),
       //autofocus: true ,
     );
   }
 }
-
-
-
-
-
-
 
 // import 'package:flutter/material.dart';
 //

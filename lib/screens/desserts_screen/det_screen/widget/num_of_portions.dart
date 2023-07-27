@@ -4,10 +4,10 @@ import 'package:meal_monkey_mobile_project/screens/desserts_screen/det_screen/wi
 import 'custom_button.dart';
 import 'head_txt.dart';
 
-
 class NumOfPortions extends StatelessWidget {
-  int count = 1 ;
-   NumOfPortions({
+  final int count = 1;
+
+ const NumOfPortions({
     Key? key,
   }) : super(key: key);
 
@@ -18,13 +18,17 @@ class NumOfPortions extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Expanded(child: HeadTex(str: 'Number of Portions')),
+          const Expanded(child: HeadTex(str: 'Number of Portions')),
           CustomButton(
-            str: '-', count: count,
+            str: '-',
+            count: count,
           ),
-           ShowResultDet(count: count,),
+          ShowResultDet(
+            count: count,
+          ),
           CustomButton(
-            str: '+', count: count,
+            str: '+',
+            count: count,
           ),
         ],
       ),

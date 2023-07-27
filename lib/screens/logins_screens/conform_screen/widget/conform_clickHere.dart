@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../util/constant.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class ConformClickHere extends StatelessWidget {
   const ConformClickHere({
@@ -14,8 +13,8 @@ class ConformClickHere extends StatelessWidget {
       children: [
         const Text(
           'Didn\'t Receive?',
-          style: TextStyle(
-              color: Color(secondaryTextColor), fontSize: sizeText),
+          style:
+              TextStyle(color: Color(secondaryTextColor), fontSize: sizeText),
         ),
         TextButton(
             onPressed: () {
@@ -23,8 +22,7 @@ class ConformClickHere extends StatelessWidget {
             },
             child: const Text(
               'Click Here',
-              style:
-              TextStyle(color: Color(primaryColor), fontSize: sizeText),
+              style: TextStyle(color: Color(primaryColor), fontSize: sizeText),
             ))
       ],
     );

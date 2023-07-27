@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../body_nav_bar/home/widget/search_appbar.dart';
 import 'body_desserts.dart';
-
 
 class BodyDessertsScreen extends StatelessWidget {
   const BodyDessertsScreen({

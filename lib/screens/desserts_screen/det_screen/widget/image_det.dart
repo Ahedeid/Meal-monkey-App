@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../util/constant.dart';
-
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class ImageDet extends StatelessWidget {
   const ImageDet({
@@ -19,7 +17,9 @@ class ImageDet extends StatelessWidget {
               width: double.infinity,
               height: 360,
               child: ClipRRect(
-                borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(50),bottomRight:Radius.circular(50) ),
+                borderRadius: const BorderRadius.only(
+                    bottomLeft: Radius.circular(50),
+                    bottomRight: Radius.circular(50)),
                 child: Image.asset(
                   'assets/images/pizzat.png',
                   color: Colors.black.withOpacity(0.2),
@@ -37,21 +37,25 @@ class ImageDet extends StatelessWidget {
         Positioned(
           bottom: 0,
           right: 35,
-          child:  Container(
+          child: Container(
             width: 70,
             height: 70,
             decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.white,
                 boxShadow: [
-                  BoxShadow(color: Colors.black12,offset: Offset(1,1)),
-                  BoxShadow(color: Colors.black12,offset: Offset(-1,-1)),
-                ]
-            ),
+                  BoxShadow(color: Colors.black12, offset: Offset(1, 1)),
+                  BoxShadow(color: Colors.black12, offset: Offset(-1, -1)),
+                ]),
             // child: SvgPicture.asset(''),
             child: IconButton(
               onPressed: () {},
-              icon: const Icon(Icons.favorite,color: Color(primaryColor),size: 40,),),
+              icon: const Icon(
+                Icons.favorite,
+                color: Color(primaryColor),
+                size: 40,
+              ),
+            ),
           ),
         )
       ],

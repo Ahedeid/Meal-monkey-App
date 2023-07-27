@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../util/constant.dart';
-import '../../my_order/check_out/widget/send_order_sheet.dart';
+import 'package:meal_monkey_mobile_project/screens/body_nav_bar/more/my_order/check_out/widget/send_order_sheet.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 import 'Sheet/contentInPayment.dart';
 import 'Sheet/csut_bottomsheet_payment.dart';
 
-
 class CustButtonPayment extends StatelessWidget {
-  String str;
+  final String str;
 
-  double virtial;
+  final double virtial;
 
-  CustButtonPayment({super.key, required this.str, required this.virtial});
+  const CustButtonPayment(
+      {super.key, required this.str, required this.virtial});
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +44,7 @@ class CustButtonPayment extends StatelessWidget {
                 : showModalBottomSheet(
                     isScrollControlled: true,
                     context: context,
-                    shape:  const RoundedRectangleBorder(
+                    shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(18),
                           topRight: Radius.circular(18)),
@@ -60,5 +59,3 @@ class CustButtonPayment extends StatelessWidget {
     );
   }
 }
-
-

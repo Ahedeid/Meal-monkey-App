@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../util/constant.dart';
-
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class CustomTrailingInbox extends StatelessWidget {
   const CustomTrailingInbox({
@@ -19,12 +17,12 @@ class CustomTrailingInbox extends StatelessWidget {
         const SizedBox(height: 15),
         Expanded(
             child: IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.star_outline,
-                color: Color(primaryColor),
-              ),
-            ))
+          onPressed: () {},
+          icon: const Icon(
+            Icons.star_outline,
+            color: Color(primaryColor),
+          ),
+        ))
       ],
     );
   }

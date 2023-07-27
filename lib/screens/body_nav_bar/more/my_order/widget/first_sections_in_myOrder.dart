@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meal_monkey_mobile_project/screens/body_nav_bar/more/my_order/widget/sum_txt_ofFirs_sectionMyOrder.dart';
-
-import '../../../../../util/const_assets.dart';
-
-
+import 'package:meal_monkey_mobile_project/util/const_assets.dart';
 
 class FirstSectionsInMyOrder extends StatelessWidget {
   const FirstSectionsInMyOrder({
@@ -22,11 +19,9 @@ class FirstSectionsInMyOrder extends StatelessWidget {
             Image.asset(porgar),
             const SizedBox(width: 17),
             const SumTxtOfFirsSectionMyOrder()
-
           ],
         ),
       ),
     );
   }
 }
-

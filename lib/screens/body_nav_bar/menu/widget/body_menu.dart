@@ -18,7 +18,6 @@ class BodyMenu extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 15),
             child: Expanded(
               child: ListView(
-                shrinkWrap: true,
                 children: const [
                   CardMuneBady(),
                   SizedBox(height: 20),

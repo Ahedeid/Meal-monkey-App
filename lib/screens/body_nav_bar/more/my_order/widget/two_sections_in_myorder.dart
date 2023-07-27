@@ -20,7 +20,7 @@ class TwoSectionsInMyOrder extends StatelessWidget {
           ListOfOrderDet(
               name: 'Beef Burger x1',
               prise: '\$16',
-              isbold: false,
+              isBold: false,
               colors: const Color(primaryTextColor),
               size: sizeText),
           const SizedBox(height: 15),
@@ -32,7 +32,7 @@ class TwoSectionsInMyOrder extends StatelessWidget {
           ListOfOrderDet(
               name: 'Classic Burger x1',
               prise: '\$14',
-              isbold: false,
+              isBold: false,
               colors: const Color(primaryTextColor),
               size: sizeText),
           const SizedBox(height: 15),
@@ -44,7 +44,7 @@ class TwoSectionsInMyOrder extends StatelessWidget {
           ListOfOrderDet(
               name: 'Cheese Chicken Burger x1',
               prise: '\$17',
-              isbold: false,
+              isBold: false,
               colors: const Color(primaryTextColor),
               size: sizeText),
           const SizedBox(height: 15),
@@ -56,7 +56,7 @@ class TwoSectionsInMyOrder extends StatelessWidget {
           ListOfOrderDet(
               name: 'Chicken Legs Basket x1',
               prise: '\$15',
-              isbold: false,
+              isBold: false,
               colors: const Color(primaryTextColor),
               size: sizeText),
           const SizedBox(height: 15),
@@ -68,7 +68,7 @@ class TwoSectionsInMyOrder extends StatelessWidget {
           ListOfOrderDet(
               name: 'French Fries Large x1',
               prise: '\$6',
-              isbold: false,
+              isBold: false,
               colors: const Color(primaryTextColor),
               size: sizeText),
         ],

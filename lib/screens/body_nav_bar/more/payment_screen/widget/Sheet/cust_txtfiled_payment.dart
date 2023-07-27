@@ -1,17 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
-import '../../../../../../util/constant.dart';
-
-
-
-
-
-
-class Cust_txtfiled_payment extends StatelessWidget {
+class CustomTxtFiledPayment extends StatelessWidget {
   final String hint;
-  final double wSizeFelid;
+  final double wSizeFiled;
 
-   const Cust_txtfiled_payment({super.key,required this.wSizeFelid, required this.hint});
+  const CustomTxtFiledPayment(
+      {super.key, required this.wSizeFiled, required this.hint});
 
   @override
   Widget build(BuildContext context) {
@@ -19,21 +14,23 @@ class Cust_txtfiled_payment extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 5),
       child: SizedBox(
         height: textFieldHeight,
-        width: wSizeFelid,
+        width: wSizeFiled,
         child: TextField(
           decoration: InputDecoration(
             prefix: const Text("       "),
             hintText: hint,
-            hintStyle: const TextStyle(color: Color(primaryTextColor)),
+            hintStyle: const TextStyle(
+              color: Color(primaryTextColor),
+            ),
             filled: true,
             fillColor: const Color(backGroundColor),
             border: OutlineInputBorder(
-                borderSide: BorderSide.none,
-                borderRadius: BorderRadius.circular(50)),
+              borderSide: BorderSide.none,
+              borderRadius: BorderRadius.circular(50),
+            ),
           ),
         ),
       ),
     );
   }
 }
-

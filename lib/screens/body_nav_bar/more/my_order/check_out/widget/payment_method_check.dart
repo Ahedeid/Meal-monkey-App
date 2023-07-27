@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../../util/constant.dart';
-import '../../../payment_screen/widget/Sheet/csut_bottomsheet_payment.dart';
-
+import 'package:meal_monkey_mobile_project/screens/body_nav_bar/more/payment_screen/widget/Sheet/csut_bottomsheet_payment.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class PaymentMethod extends StatelessWidget {
   const PaymentMethod({
@@ -27,16 +25,16 @@ class PaymentMethod extends StatelessWidget {
                 return const CusBottomSheetPayMent();
               });
         },
-        child: Row(
+        child: const Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text(
+            Text(
               'Payment method',
               style: TextStyle(
                   fontSize: sizeText, color: Color(secondaryTextColor)),
             ),
             Row(
-              children: const [
+              children: [
                 Icon(
                   Icons.add,
                   color: Color(primaryColor),
@@ -44,8 +42,8 @@ class PaymentMethod extends StatelessWidget {
                 SizedBox(width: 10),
                 Text(
                   'Add Card',
-                  style: TextStyle(
-                      fontSize: sizeText, color: Color(primaryColor)),
+                  style:
+                      TextStyle(fontSize: sizeText, color: Color(primaryColor)),
                 )
               ],
             )

@@ -1,11 +1,5 @@
-
-
-
 import 'package:flutter/material.dart';
-
-import '../../../../../util/constant.dart';
-
-
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class CustomCardPayment extends StatelessWidget {
   const CustomCardPayment({
@@ -21,13 +15,11 @@ class CustomCardPayment extends StatelessWidget {
         elevation: 20,
         color: const Color(0xffF7F7F7),
         child: Padding(
-          padding:
-          const EdgeInsets.symmetric(horizontal: 35, vertical: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 35, vertical: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ListTile(
-
                 title: const Text(
                   'Cash/Card on delivery',
                   style: TextStyle(
@@ -47,7 +39,7 @@ class CustomCardPayment extends StatelessWidget {
                 thickness: 1,
               ),
               ListTile(
-                leading:Image.asset('assets/images/viza.jpg'),
+                leading: Image.asset('assets/images/viza.jpg'),
                 title: const Text(
                   '**** **** ****',
                   style: TextStyle(
@@ -67,9 +59,15 @@ class CustomCardPayment extends StatelessWidget {
                 thickness: 1,
                 height: 1,
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 15,horizontal: 20),
-                child: Text('Other Methods',style: TextStyle(fontWeight: FontWeight.bold,),),
+              const Padding(
+                padding:
+                    EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+                child: Text(
+                  'Other Methods',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               )
             ],
           ),

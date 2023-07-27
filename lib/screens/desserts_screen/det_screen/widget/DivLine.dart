@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 class DevLine extends StatelessWidget {
   const DevLine({
     Key? key,

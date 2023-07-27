@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
-import '../../../../util/constant.dart';
 
-class CustButtonOffer extends StatelessWidget {
-  const CustButtonOffer({
+class CustomButtonOffer extends StatelessWidget {
+  const CustomButtonOffer({
     Key? key,
   }) : super(key: key);
 

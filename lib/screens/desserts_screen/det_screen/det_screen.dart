@@ -9,7 +9,6 @@ import 'package:meal_monkey_mobile_project/screens/desserts_screen/det_screen/wi
 import 'package:meal_monkey_mobile_project/screens/desserts_screen/det_screen/widget/num_of_portions.dart';
 import 'package:meal_monkey_mobile_project/screens/desserts_screen/det_screen/widget/total_price.dart';
 
-
 class DetScreen extends StatefulWidget {
   const DetScreen({Key? key}) : super(key: key);
 
@@ -26,22 +25,22 @@ class _DetScreenState extends State<DetScreen> {
         alignment: Alignment.center,
         children: [
           ListView(
-            children: [
-              const ImageDet(),
-              const RatingPos(),
-              const SizedBox(height: 15),
+            children: const [
+              ImageDet(),
+              RatingPos(),
+              SizedBox(height: 15),
               HeadTex(str: 'Descriptions'),
-              const DescriptionDet(),
-              const DevLine(),
-              const SizedBox(height: 15),
+              DescriptionDet(),
+              DevLine(),
+              SizedBox(height: 15),
               HeadTex(str: 'Customize your Order'),
-              const SizedBox(height: 15),
+              SizedBox(height: 15),
               BoxOptions(str: '- Select the size of portion -'),
               BoxOptions(str: '- Select the ingredients -'),
-              const SizedBox(height: 15),
-               NumOfPortions(),
-              const SizedBox(height: 35),
-              const TotalPrice()
+              SizedBox(height: 15),
+              NumOfPortions(),
+              SizedBox(height: 35),
+              TotalPrice()
             ],
           ),
           const CusAppBarDet(),
@@ -50,4 +49,3 @@ class _DetScreenState extends State<DetScreen> {
     );
   }
 }
-

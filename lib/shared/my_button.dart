@@ -27,10 +27,13 @@ class CustomButton extends StatelessWidget {
                   const Size(buttonWidth, buttonHeight)),
               backgroundColor:
                   MaterialStateProperty.all(const Color(backGroundColor)),
-              shape: MaterialStateProperty.all(RoundedRectangleBorder(
+              shape: MaterialStateProperty.all(
+                RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(28),
-                  side:
-                      const BorderSide(color: Color(primaryColor), width: 2))))
+                  side: const BorderSide(color: Color(primaryColor), width: 2),
+                ),
+              ),
+            )
           : ButtonStyle(
               minimumSize: MaterialStateProperty.all(
                   const Size(buttonWidth, buttonHeight)),

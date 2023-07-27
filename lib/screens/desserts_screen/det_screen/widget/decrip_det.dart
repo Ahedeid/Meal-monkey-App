@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../util/constant.dart';
-
-
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class DescriptionDet extends StatelessWidget {
   const DescriptionDet({
@@ -15,7 +12,10 @@ class DescriptionDet extends StatelessWidget {
       padding: EdgeInsets.all(15),
       child: Text(
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare leo non mollis id cursus. Eu euismod faucibus in leo malesuada',
-        style: TextStyle(fontSize: 16,color: Color(secondaryTextColor)),
+        style: TextStyle(
+          fontSize: 16,
+          color: Color(secondaryTextColor),
+        ),
       ),
     );
   }

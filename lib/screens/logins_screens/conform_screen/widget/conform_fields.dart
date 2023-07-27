@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meal_monkey_mobile_project/screens/logins_screens/conform_screen/widget/password_feild.dart';
 
-
 class ConformFields extends StatelessWidget {
   const ConformFields({
     Key? key,
@@ -9,9 +8,9 @@ class ConformFields extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: const [
+      children: [
         PasswordFeild(),
         PasswordFeild(),
         PasswordFeild(),

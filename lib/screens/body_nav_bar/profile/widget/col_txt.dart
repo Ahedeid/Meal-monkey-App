@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../util/constant.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class ColTxt extends StatelessWidget {
   const ColTxt({
@@ -9,12 +8,19 @@ class ColTxt extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: const [
-        Icon(Icons.edit,color: Color(primaryColor),size: 12,),
+      children: [
+        Icon(
+          Icons.edit,
+          color: Color(primaryColor),
+          size: 12,
+        ),
         SizedBox(width: 7),
-        Text('Edit Profile',style: TextStyle(color: Color(primaryColor),fontSize: 13),),
+        Text(
+          'Edit Profile',
+          style: TextStyle(color: Color(primaryColor), fontSize: 13),
+        ),
       ],
     );
   }

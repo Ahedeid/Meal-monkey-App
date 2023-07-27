@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../util/constant.dart';
-
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class CustomTitleIndox extends StatelessWidget {
   const CustomTitleIndox({
@@ -10,9 +8,9 @@ class CustomTitleIndox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
+        children: [
           Text(
             'MealMonkey Promotions',
             style: TextStyle(

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:meal_monkey_mobile_project/screens/desserts_screen/widget/app_bar_dessets.dart';
 import 'package:meal_monkey_mobile_project/screens/desserts_screen/widget/body_builder.dart';
 
-
 class DessertsScreen extends StatefulWidget {
   const DessertsScreen({Key? key}) : super(key: key);
 
@@ -12,20 +11,17 @@ class DessertsScreen extends StatefulWidget {
 }
 
 class _DessertsScreenState extends State<DessertsScreen> {
-int currentIndex = 2;
+  int currentIndex = 2;
+
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       //extendBodyBehindAppBar: true,
       appBar: CustomAppBarDesserts(),
-       body: BodyDessertsScreen(),
+      body: BodyDessertsScreen(),
     );
   }
 }
-
-
-
-
 
 //  body: ListView(
 //    physics: const NeverScrollableScrollPhysics(),

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-
-class IconCloseBottomSeetPayMayment extends StatelessWidget {
-  const IconCloseBottomSeetPayMayment({
+class IconCloseBottomSheetPayment extends StatelessWidget {
+  const IconCloseBottomSheetPayment({
     Key? key,
   }) : super(key: key);
 
@@ -14,10 +13,12 @@ class IconCloseBottomSeetPayMayment extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           const SizedBox(width: 5),
-          IconButton(onPressed:(){
-            Navigator.pop(context);
-          },
-            icon: const Icon(Icons.close),),
+          IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(Icons.close),
+          ),
         ],
       ),
     );

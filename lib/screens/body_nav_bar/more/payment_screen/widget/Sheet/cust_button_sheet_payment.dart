@@ -1,15 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
-import '../../../../../../util/constant.dart';
-
-
-
-
-
-
-
-class CustButtonSheetPayMent extends StatelessWidget {
-  const CustButtonSheetPayMent({
+class CustomButtonSheetPayment extends StatelessWidget {
+  const CustomButtonSheetPayment({
     Key? key,
   }) : super(key: key);
 
@@ -22,7 +15,7 @@ class CustButtonSheetPayMent extends StatelessWidget {
         child: ElevatedButton(
           style: ButtonStyle(
             backgroundColor:
-            const MaterialStatePropertyAll(Color(primaryColor)),
+                const MaterialStatePropertyAll(Color(primaryColor)),
             shape: MaterialStatePropertyAll(
               RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(35),
@@ -30,8 +23,8 @@ class CustButtonSheetPayMent extends StatelessWidget {
             ),
           ),
           onPressed: () {},
-          child: Row(
-            children: const [
+          child: const Row(
+            children: [
               SizedBox(width: 60),
               Icon(
                 Icons.add,
@@ -43,7 +36,8 @@ class CustButtonSheetPayMent extends StatelessWidget {
                 style: TextStyle(fontSize: mediumTxt),
               ),
             ],
-          ),),
+          ),
+        ),
       ),
     );
   }

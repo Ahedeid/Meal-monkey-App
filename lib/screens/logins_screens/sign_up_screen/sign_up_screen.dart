@@ -29,7 +29,7 @@ class _SignUpState extends State<SignUp> {
           key: signUpFormKey,
           child: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 22),
+              padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
               child: Column(
                 children: [
                   const SizedBox(height: 60),

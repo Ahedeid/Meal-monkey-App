@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:meal_monkey_mobile_project/screens/body_nav_bar/more/Inbox/widget/custom_title_inbox.dart';
 import 'package:meal_monkey_mobile_project/screens/body_nav_bar/more/Inbox/widget/custom_trailing_inbox.dart';
-
-
-import '../../../../shared/cust_appbar_other.dart';
-import '../../../../util/constant.dart';
+import 'package:meal_monkey_mobile_project/shared/cust_appbar_other.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 class InboxScreen extends StatefulWidget {
   const InboxScreen({Key? key}) : super(key: key);
@@ -18,8 +15,7 @@ class _InboxScreenState extends State<InboxScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-        appBar: CsutAppBarOther(
+        appBar: CustomAppBarOther(
           txt: 'Inbox',
         ),
         body: ListView.builder(
@@ -40,7 +36,3 @@ class _InboxScreenState extends State<InboxScreen> {
         ));
   }
 }
-
-
-
-

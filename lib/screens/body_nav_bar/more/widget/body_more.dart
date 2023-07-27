@@ -5,27 +5,27 @@ import 'custom_button_more.dart';
 
 class BodyMore extends StatelessWidget {
   String str;
-String nav ;
+  String nav;
+
   String image;
 
-  BodyMore({super.key, required this.nav,required this.str, required this.image});
+  BodyMore(
+      {super.key, required this.nav, required this.str, required this.image});
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: (){
+      onTap: () {
         Navigator.pushNamed(context, nav);
       },
       child: Stack(
         children: [
           CusContainerMore(image: image, str: str),
-           CustomButtonMore(nav: nav,),
+          CustomButtonMore(
+            nav: nav,
+          ),
         ],
       ),
     );
   }
 }
-
-
-
-

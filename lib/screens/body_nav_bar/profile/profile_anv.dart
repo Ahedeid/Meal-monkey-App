@@ -14,66 +14,66 @@ class ProfileNav extends StatefulWidget {
 class _ProfileNavState extends State<ProfileNav> {
   @override
   Widget build(BuildContext context) {
-    return  SingleChildScrollView(
+    return SingleChildScrollView(
       child: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.symmetric(
+          padding: const EdgeInsets.symmetric(
             horizontal: 34,
           ),
           child: SingleChildScrollView(
             child: Column(
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   maxRadius: 45,
                   backgroundImage: AssetImage('assets/images/user.png'),
                 ),
-                SizedBox(height: 8),
-                ColTxt(),
-                SizedBox(height: 8),
-                Text(
+                const SizedBox(height: 8),
+                const ColTxt(),
+                const SizedBox(height: 8),
+                const Text(
                   'Hi there Emilia!',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 2),
-                Text(
+                const SizedBox(height: 2),
+                const Text(
                   'Sign Out',
                   style: TextStyle(color: Color(secondaryTextColor)),
                 ),
-                SizedBox(height: 20),
-                CustomTextFiled(
+                const SizedBox(height: 20),
+                const CustomTextFiled(
                   hintText: 'Name',
                   keyboardType: TextInputType.text,
                 ),
-                SizedBox(height: 12),
-                CustomTextFiled(
+                const SizedBox(height: 12),
+                const CustomTextFiled(
                   hintText: 'Email',
                   keyboardType: TextInputType.emailAddress,
                 ),
-                SizedBox(height: 12),
-                CustomTextFiled(
+                const SizedBox(height: 12),
+                const CustomTextFiled(
                   hintText: 'Mobile No',
                   keyboardType: TextInputType.phone,
                 ),
-                SizedBox(height: 12),
-                CustomTextFiled(
+                const SizedBox(height: 12),
+                const CustomTextFiled(
                   hintText: 'Password',
                   keyboardType: TextInputType.text,
                   obscureText: true,
                 ),
-                SizedBox(height: 12),
-                CustomTextFiled(
+                const SizedBox(height: 12),
+                const CustomTextFiled(
                   hintText: 'Confirm Password',
                   keyboardType: TextInputType.text,
                   obscureText: true,
                 ),
-                SizedBox(height: 12),
+                const SizedBox(height: 12),
                 CustomButton(
                   title: 'Save',
-                  color: Color(primaryColor),
-                  onPressed: (){},
+                  color: const Color(primaryColor),
+                  onPressed: () {},
                   textSize: sizeText,
                 ),
-                SizedBox(height: 50)
+                const SizedBox(height: 50)
               ],
             ),
           ),

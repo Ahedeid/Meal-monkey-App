@@ -14,7 +14,7 @@ class MyOederScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CsutAppBarOther(txt: 'My Order'),
+      appBar: CustomAppBarOther(txt: 'My Order'),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 22),
         child: Column(
@@ -61,14 +61,14 @@ class MyOederScreen extends StatelessWidget {
             ListOfOrderDet(
                 name: 'Sub Total',
                 prise: '\$68',
-                isbold: true,
+                isBold: true,
                 colors: const Color(primaryTextColor),
                 size: sizeText),
             const SizedBox(height: 15),
             ListOfOrderDet(
                 name: 'Delivery Cost',
                 prise: '\$2',
-                isbold: true,
+                isBold: true,
                 colors: const Color(primaryTextColor),
                 size: sizeText),
             const SizedBox(height: 20),
@@ -80,7 +80,7 @@ class MyOederScreen extends StatelessWidget {
             ListOfOrderDet(
                 name: 'Total',
                 prise: '\$70x',
-                isbold: true,
+                isBold: true,
                 colors: const Color(primaryColor),
                 size: 22),
             const SizedBox(height: 30),
