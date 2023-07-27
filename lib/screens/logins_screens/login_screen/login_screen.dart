@@ -61,7 +61,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       color: const Color(primaryColor),
                       onPressed: () {
                         if (signInFormKey.currentState!.validate()) {
-                          Navigator.pushNamed(context, 'home_screen');
+                          Navigator.pushReplacementNamed(
+                              context, 'home_screen');
                           SharedPrefController().setLogedin();
                         }
                       },
@@ -76,7 +77,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       color: const Color(0xff367FC0),
                       onPressed: () {
                         if (signInFormKey.currentState!.validate()) {
-                          Navigator.pushNamed(context, 'home_screen');
+                          Navigator.pushReplacementNamed(
+                              context, 'home_screen');
                           SharedPrefController().setLogedin();
                         }
                       },
@@ -87,7 +89,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       color: const Color(0xffDD4B39),
                       onPressed: () {
                         if (signInFormKey.currentState!.validate()) {
-                          Navigator.pushNamed(context, 'home_screen');
+                          Navigator.pushReplacementNamed(
+                              context, 'home_screen');
                           SharedPrefController().setLogedin();
                         }
                       },
