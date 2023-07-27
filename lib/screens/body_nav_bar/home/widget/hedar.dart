@@ -1,18 +1,14 @@
 import 'package:flutter/material.dart';
-
-import '../../../../util/constant.dart';
-
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
 
+class HeaderName extends StatelessWidget {
+  final String title;
 
-
-class HedarName extends StatelessWidget {
-
-  String title ;
-
-   HedarName({super.key,
+ const HeaderName({
+    super.key,
     required this.title,
-  }) ;
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -21,9 +17,9 @@ class HedarName extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-           Text(
-            title ,
-            style: TextStyle(
+          Text(
+            title,
+            style: const TextStyle(
               fontSize: largeTxt,
               color: Color(primaryTextColor),
               fontWeight: FontWeight.bold,

@@ -9,11 +9,11 @@ const int backGroundColor = 0xffF2F2F2;
 const int textInButtonColor = 0xffFFFFFF;
 
 // Size Text in App
-const double sizeText = 16;
+const double sizeText = 14;
 
-const double mediumTxt = 18;
+const double mediumTxt = 16;
 
-const double largeTxt = 30;
+const double largeTxt = 25;
 
 // Width && Height  Button in App
 const double buttonWidth = double.infinity;

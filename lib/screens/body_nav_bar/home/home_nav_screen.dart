@@ -8,9 +8,6 @@ import 'package:meal_monkey_mobile_project/screens/body_nav_bar/home/widget/deli
 import 'package:meal_monkey_mobile_project/screens/body_nav_bar/home/widget/hedar.dart';
 import 'package:meal_monkey_mobile_project/screens/body_nav_bar/home/widget/search_appbar.dart';
 
-
-
-
 class HomeNavScreen extends StatelessWidget {
   const HomeNavScreen({
     Key? key,
@@ -19,28 +16,26 @@ class HomeNavScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-        children: [
-          const DeliveringToTxt(),
-          const CustomListComp(),
-          const SizedBox(height: 15),
-          const SearchBar(),
-          const SizedBox(height: 18),
-           CustomListHoris(),
-          const SizedBox(height: 28),
-          HedarName(title: 'Popular Restaurants'),
-          const SizedBox(height: 25),
-           BodyOffer(),
-          const SizedBox(height: 28),
-          HedarName(title: 'Most Popular'),
-          const SizedBox(height: 20),
-          const CustomListHorisTwo(),
-          const SizedBox(height: 28),
-          HedarName(title: 'Recent Items'),
-          const SizedBox(height: 20),
-          const CustomListViewVerTwo(),
-        ],
+      children: [
+        const DeliveringToTxt(),
+        const CustomListComp(),
+        const SizedBox(height: 15),
+        const SearchBarWidget(),
+        const SizedBox(height: 18),
+        CustomListHoris(),
+        const SizedBox(height: 28),
+        const HeaderName(title: 'Popular Restaurants'),
+        const SizedBox(height: 25),
+        BodyOffer(),
+        const SizedBox(height: 28),
+        const HeaderName(title: 'Most Popular'),
+        const SizedBox(height: 20),
+        const CustomListHorisTwo(),
+        const SizedBox(height: 28),
+        const HeaderName(title: 'Recent Items'),
+        const SizedBox(height: 20),
+        const CustomListViewVerTwo(),
+      ],
     );
   }
 }
-
-
