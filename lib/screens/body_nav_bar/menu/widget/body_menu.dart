@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'card_menu_body.dart';
 import 'container_orang.dart';
 
-
 class BodyMenu extends StatelessWidget {
   const BodyMenu({
     Key? key,
@@ -16,7 +15,7 @@ class BodyMenu extends StatelessWidget {
         children: [
           const ContainerOrange(),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 14,vertical: 15),
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 15),
             child: Expanded(
               child: ListView(
                 shrinkWrap: true,
@@ -37,4 +36,3 @@ class BodyMenu extends StatelessWidget {
     );
   }
 }
-

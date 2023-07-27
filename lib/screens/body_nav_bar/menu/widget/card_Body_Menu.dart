@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:meal_monkey_mobile_project/util/constant.dart';
 
-import '../../../../util/constant.dart';
 
 class CardINBodyMenu extends StatelessWidget {
   const CardINBodyMenu({
@@ -9,14 +9,14 @@ class CardINBodyMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 35,right: 14),
+    return const Padding(
+      padding: EdgeInsets.only(left: 35, right: 14),
       child: SizedBox(
         height: 100,
         child: Card(
           elevation: 8,
           // shadowColor: Color(0xff00000029),
-          shape: const RoundedRectangleBorder(
+          shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
               topRight: Radius.circular(12),
               bottomRight: Radius.circular(12),
@@ -25,10 +25,10 @@ class CardINBodyMenu extends StatelessWidget {
             ),
           ),
           child: Padding(
-            padding: const EdgeInsets.only(left: 56, top: 18),
+            padding: EdgeInsets.only(left: 56, top: 18),
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: const [
+                children: [
                   Text(
                     'Food',
                     style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:meal_monkey_mobile_project/screens/body_nav_bar/home/widget/search_appbar.dart';
 import 'package:meal_monkey_mobile_project/screens/body_nav_bar/menu/widget/body_menu.dart';
 
-import '../home/widget/search_appbar.dart';
 
 class MenuNav extends StatefulWidget {
   const MenuNav({Key? key}) : super(key: key);
@@ -13,11 +13,11 @@ class MenuNav extends StatefulWidget {
 class _MenuNavState extends State<MenuNav> {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: const [
+      children: [
         //SizedBox(height: 5),
-        SearchBar(),
+        SearchBarWidget(),
         SizedBox(height: 35),
         BodyMenu(),
       ],

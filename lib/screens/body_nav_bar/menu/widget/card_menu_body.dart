@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../util/constant.dart';
 import 'button_Body_Menu.dart';
 import 'card_Body_Menu.dart';
 import 'image_Body_Menu.dart';
-
-
 
 class CardMuneBady extends StatelessWidget {
   const CardMuneBady({
@@ -15,27 +12,20 @@ class CardMuneBady extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      children:  [
+      children: [
         InkWell(
-            onTap: (){
+            onTap: () {
               Navigator.pushNamed(context, 'desserts_screen');
             },
             child: const CardINBodyMenu()),
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 10),
+        const Padding(
+          padding: EdgeInsets.symmetric(vertical: 10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const [
-              ImageINBodyMenu(),
-              ButtonINBodyMenu()
-            ],
+            children: [ImageINBodyMenu(), ButtonINBodyMenu()],
           ),
         )
-
       ],
     );
   }
 }
-
-
-
