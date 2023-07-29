@@ -1,4 +1,4 @@
-# meal_monkey_mobile_project
+# Meal monkey App
 
 A new Flutter project.
 
