@@ -39,6 +39,7 @@ dependencies:
   flutter_svg: ^1.1.6
   flutter_rating_bar: ^4.0.1
   shared_preferences:
+  flutter_bloc: ^8.1.3
 
 
 
